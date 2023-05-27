@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pedidos</title>
+</head>
+<style>
+  /* Estilos de fondo */
+  body{
+    background-image: url('https://drive.google.com/uc?export=view&id=1MAH2dVyoCle9URCk7bFSEzJDlUbs0GH9');
+  }
+  /* Estilos de titulo */
+  .Titulo{
+    display: inline-block;
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    margin: 0 0 20px 0;
+  }
+
+  /*Estilos de Contenedores de información*/
+  .contenedorPrincipal{
+    color: white; 
+    display: grid; 
+    justify-content: center; 
+    flex-direction: column;
+    font-size: medium;
+  }
+  .contenedor{
+    display: flex; 
+    flex-direction: column; 
+    width: 300px; 
+    padding: 5px; 
+    margin-bottom: 10px; 
+    border: 1px solid #000;
+    border-radius: 10px;
+  }
+  #informacion{
+    background-color: #f47a27;
+  }
+  #textArea{
+    height: 50px;
+  }
+  #nombre{
+    background-color: #a9a9a9;
+  }
+  #direccion{
+    background-color: #f8c200;
+    color: black;
+  }
+  #carrito{
+    background-color: #4b90d1;
+  }
+  #telefono{
+    background-color: #78b452;
+  }
+  #fechaDeEntrega{
+    text-align: center;
+    background-color: #f47a27;
+  }
+  /* Estilos de boton de regreso */
+  .contenedorDelBoton{
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+  }
+  .contenedorDelBoton button{
+    width: 150px;
+    height: 100px;
+    margin: 20px;
+    background-color: #a9a9a9;
+    color: white;
+    cursor: pointer;
+    font-size: large;
+    border-radius: 50%;
+  }
+</style>
+<body>
+  <!-- Titulo -->
+  <h1 class="Titulo">Pedidos</h1>
+    
+  <!-- Informacion para el pedido -->
+  <div class="contenedorPrincipal">
+    <div class="contenedor" id="informacion">
+      <label for="">Información: </label>
+      <textarea name="" id="textArea" cols="10" rows="10" placeholder="Describe tu información"></textarea>
+    </div>
+
+    <div class="contenedor" id="nombre">
+      <label for="">Nombre: </label>
+      <input type="text" placeholder="Tu nombre">
+    </div>
+
+    <div class="contenedor" id="direccion">
+      <label for="">Dirección: </label>
+      <input type="text" placeholder="Estado / Municipio / calle / numero" >
+    </div>
+
+    <div class="contenedor" id="carrito">
+      <label for="">Carrito de compra: </label>
+      <input type="text">
+    </div>
+
+    <div class="contenedor" id="telefono">
+      <label for="">Telefono: </label>
+      <input type="number" placeholder="222-222-2222">
+    </div>
+
+    <div class="contenedor" id="fechaDeEntrega">
+      <p >Fecha de entrega: --/--/----</p>
+    </div>
+  </div>
+  
+  <!-- Boton para regresar a la pagina principal -->
+  <div class="contenedorDelBoton">
+    <button onclick="location.href='../index.html'">Regresar</button>
+  </div>
+  
+</body>
+</html>

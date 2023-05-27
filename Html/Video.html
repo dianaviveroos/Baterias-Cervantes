@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video</title>
+</head>
+<style>
+  *{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* Fondo */
+  body{
+    background-image: url('https://drive.google.com/uc?export=view&id=1fd7eUXgf1YlG8VkpMgU0LdWyjSi7ioMA');
+    color: white;
+    display: flex;
+  }
+  .contenedorPrincipal{
+    display: flex;
+    flex-direction: row;
+  }
+
+  /* Video */
+  .contenedorDeVideo{
+    display: flex;
+    width: 50vw;
+    height: 100vh;
+  }
+  .contenedorDeVideo video{
+    width: 400px;
+    padding: 50px;
+  }
+
+  /* Texto */
+  .contenedorDeTituloYDescripcion{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contenedorDeTexto h1{
+    margin-bottom: 30px;
+    font-size: 36px;
+  }
+  .contenedorDeTexto li{
+    margin-bottom: 30px;
+    padding: 10px;
+    font-size: 26px;
+  }
+
+  /* Estilos de boton de regreso */
+  .contenedorDelBoton{
+    position: absolute;
+    z-index: 2;
+    bottom: 0%;
+    right: 0%;
+  }
+  .contenedorDelBoton button{
+    width: 150px;
+    height: 100px;
+    margin: 20px;
+    background-color: #a9a9a9;
+    color: white;
+    cursor: pointer;
+    font-size: large;
+    border-radius: 50%;
+  }
+</style>
+<body>
+
+  <section class="contenedorPrincipal">
+
+    <div class="contenedorDeVideo">
+      <video src="https://drive.google.com/uc?export=view&id=1tgiFAV1zaE5UY00oCi89nGLFg-13IBvp" controls></video>
+    </div>
+
+    <div class="contenedorDeTituloYDescripcion">
+      <div class="contenedorDeTexto">
+        <h1>Video</h1>
+        <ul class="descripcion">
+          <li>El video fue realizado por nosotras con el fin de ofrecer mas nuestros productos.</li>
+        </ul>
+      </div>
+      
+      <!-- Boton para regresar a la pagina principal -->
+      <div class="contenedorDelBoton">
+        <button onclick="location.href='../index.html'">Regresar</button>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

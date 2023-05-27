@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Precios de Baterias</title>
+</head>
+<style>
+  *{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+  /*Fondo*/
+  body{
+    background-image: url('https://drive.google.com/uc?export=view&id=1t7xNGXrgAieEYnq7jqPGlNIytJdrbE-4');
+    color: white;
+  }
+
+  /* Texto */
+  h1{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    margin: 20px;
+  }
+  .contenedorPrincipal{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .contenedorDePrecios{
+    margin: 40px;
+    font-size: 32px;
+  }
+
+  /* Estilos de boton de regreso */
+  .contenedorDelBoton{
+    position: absolute;
+    z-index: 2;
+    bottom: 0%;
+    left: 0%;
+  }
+  .contenedorDelBoton button{
+    width: 150px;
+    height: 100px;
+    margin: 20px;
+    background-color: #a9a9a9;
+    color: white;
+    cursor: pointer;
+    font-size: large;
+    border-radius: 50%;
+  }
+</style>
+<body>
+  <!-- Titulo -->
+  <h1>Precio del productos</h1>
+
+  <!-- Texto -->
+  <section class="contenedorPrincipal">
+    
+    <div class="contenedorDePrecios">
+      <ul>
+        <li>Batería de celda húmedas. $2,500 pesos</li>
+        <li>Batería de calcio. $1,600 pesos</li>
+        <li>Batería VRLA (gel y AGM) $3,450 pesos</li>
+        <li>Batería de ciclo profundo. $2,800 pesos</li>
+        <li>Batería de iones de litio. $500 pesos</li>
+      </ul>
+    </div>
+    <div class="contenedorDePrecios">
+      <ul>
+        <li>Baterías de plomo.  1,000 pesos</li>
+        <li>Baterías con ácido. 500 pesos</li>
+        <li>Baterías de gel para moto. 800 pesos</li>
+        <li>Baterías de litio.600 pesos</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Boton para regresar a la pagina principal -->
+  <div class="contenedorDelBoton">
+    <button onclick="location.href='../index.html'">Regresar</button>
+  </div>
+  
+</body>
+</html>

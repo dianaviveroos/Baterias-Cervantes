@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acumuladores y baterías Cervantes LTH</title>
+</head>
+<style>
+
+  /* Estilos de titulo */
+  .contenedorDelTitulo{
+    width: 100%;
+    display: grid;
+    place-items: center;
+  }
+  .contenedorDelTitulo h1{
+    font-size: 60px;
+    text-align: center;
+  }
+
+  /* Estilos de imagenes y del texto central*/
+  .contenedorImagenesYTexto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  img{
+    max-width: 500px;
+    max-height: 300px;
+  }
+  .contenedorDeTexto p{
+    font-size: 20px;
+    text-align: center;
+  }
+  #verLoNuevo{
+    background-color: aqua;
+    border: 2px solid;
+  }
+
+  /*Estilos de botones*/
+  .contenedorDeBotones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .contenedorDeBotones button{
+    width: 150px;
+    height: 100px;
+    margin: 20px;
+    background-color: rgb(161, 253, 22);
+    cursor: pointer;
+    font-size: large;
+  }
+  .contendorDeVideo{
+    display: flex;
+    flex-direction: row;
+  }
+  #video{
+    z-index: 2;
+    width: 100px;
+    margin: 20px 0px 20px 20px;
+    background-color: rgb(0, 201, 0);
+    border: none;
+  }
+  .filoDeVideo{
+    cursor: pointer;
+    top: 20px;
+    position: relative;
+    width: 0; 
+    height: 0; 
+    border-left: 65px solid rgb(0, 201, 0);
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+  }
+
+</style>
+<body>
+
+  <!-- Titulo -->
+  <div class="contenedorDelTitulo">
+    <h1>Acumuladores y baterías Cervantes LTH</h1>
+  </div>
+
+  <!-- Imagenes y texto -->
+  <div class="contenedorImagenesYTexto">
+    <img src="https://st.depositphotos.com/1001877/1623/i/950/depositphotos_16232967-stock-photo-car-battery-3d.jpg" alt="Bateria 1">
+    <div class="contenedorDeTexto">
+      <p>!Menos 10% en todo¡</p>
+      <p>Con el codigo: carrito</p>
+      <p>Solo en los articulos nuevos</p>
+      <p id="verLoNuevo">Ver lo nuevo</p>
+    </div>
+    <img src="https://www.autofacil.es/wp-content/uploads/2021/05/istock-1-2.jpg" alt="Bateria 2">
+  </div>
+
+  <!-- botones -->
+  <div class="contenedorDeBotones">
+    <button onclick="window.location.href='./Html/BateriaDeCarro.html'">Batería de carros</button>
+    <button onclick="window.location.href='./Html/BateriaDeMotos.html'">Batería de motos</button>
+    <button onclick="window.location.href='./Html/PreciosDeBaterias.html'">Precios</button>
+    <button onclick="window.location.href='./Html/Ubicacion.html'">Ubicación</button>
+    <button onclick="window.location.href='./Html/Pedidos.html'">Pedidos</button>
+    <div class="contendorDeVideo" onclick="window.location.href='./Html/Video.html'">
+      <button id="video">Video</button>
+      <div class="filoDeVideo"></div>
+    </div>
+  </div>
+
+</body>
+</html>
